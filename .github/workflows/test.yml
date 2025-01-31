@@ -1,1 +1,9 @@
-configuring github actions 
+name: new
+on: push
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "hello world"
+    
