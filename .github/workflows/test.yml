@@ -11,7 +11,7 @@ jobs:
           docker build -t ubuntuimg .
       - name: push image
         run: |
-          docker login -u vinodo3735 -p ${{secetes.DOCKER_HUB_TOKEN}}
+          docker login -u vinodo3735 -p ${{secretes.DOCKER_HUB_TOKEN}}
           docker push vinodo3735/ubuntuimg:latest 
       
 
