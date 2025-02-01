@@ -8,11 +8,11 @@ jobs:
         uses: actions/checkout@v4
       - name: build image
         run: |
-          docker build -t ubuntuimg .
+          docker build -t dockerimage .
       - name: push image
         run: |
           docker login -u vinodo3735 -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push ubuntuimg:latest
+          docker push vinodo3735/dockerimage:latest
       
 
       
