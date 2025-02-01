@@ -1,9 +1,20 @@
-name: new
-on: push
+name: DockerFile-to-image
+on: 
+  push:
+    branches:
+      - main:
+    paths:
+      - 'dockerfile'
 jobs:
-  testing:
-    runs-on: ubuntu-latest
+  publish_images:
+    runs-ob: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "hello world"
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: build image
+        run: |
+          docker build dockerfile .
+      
+
+      
     
