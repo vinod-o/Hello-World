@@ -1,13 +1,8 @@
 name: DockerFile-to-image
-on: 
-  push:
-    branches:
-      - main:
-    paths:
-      - 'dockerfile'
+on: push
 jobs:
   publish_images:
-    runs-ob: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
