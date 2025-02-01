@@ -9,6 +9,10 @@ jobs:
       - name: build image
         run: |
           docker build -t ubuntuimg .
+      - name: push image
+        run: |
+          docker login -u vinodo3735 -p ${{secetes.DOCKER_HUB_TOKEN}}
+          docker push vinodo3735/ubuntuimg:latest 
       
 
       
