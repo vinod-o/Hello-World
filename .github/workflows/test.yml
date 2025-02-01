@@ -12,7 +12,7 @@ jobs:
       - name: push image
         run: |
           docker login -u vinodo3735 -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push ubuntuimg:latest 
+          docker push vinodo3735/ubuntuimg:latest 
       
 
       
