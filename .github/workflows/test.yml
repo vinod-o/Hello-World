@@ -1,5 +1,5 @@
 name: DockerFile-to-image
-on: push
+on: pull
 jobs:
   publish_images:
     runs-on: ubuntu-latest
