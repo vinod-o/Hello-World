@@ -1,0 +1,2 @@
+git init
+git init command is used to initialize a new git repository in a directory . it creates a hidden .git folder,which contains files for version control
